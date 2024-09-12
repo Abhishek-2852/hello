@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="My study platform, meta">
+    <title>MyStudyPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 1rem;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            background-color: #0056b3;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #003d80;
+        }
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        section ul li a, label {
+            display: block;
+            text-decoration: none;
+            color: #007BFF;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        section ul li a:hover, label:hover {
+            background-color: #e7f0ff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        input, textarea, button {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .counter {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007BFF;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3187116945701336"
+                    crossorigin="anonymous"></script>
+        </div>
+        <h1>MyStudyPlatform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to MyStudyPlatform</h2>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="calculator/advanced calculator.html">Calculator</a></li>
+                <li><a href="livvideochatt/public/index.html">Random Live Video Chat</a></li>
+                <li><a href="calculator/advanced calculator.html">Platformer game</a></li>
+                <li><a href="source code viewer/source-code-viewer.html">Webpage Source Code Viewer</a></li>
+                <li>
+                    <label for="dropdown">Games</label><br>
+                    <select id="dropdown" name="dropdown" onchange="window.location.href=this.value">
+                        <option value="games/car-racing.html">Car Racing Game</option>
+                        <option value="Game\Pong game.html">Pong Game</option>
+                        <option value="Tic Tac Toe/tictactoe.html">Tic Tac Toe Game</option>
+                    </select>
+                </li>
+                <li><a href="Pythonprogramming/live-code-editor.html">Python Code Editor & Viewer</a></li>
+                <li><a href="createaquiz/createaquiz.html">Create a Quiz</a></li>
+                <li><a href="imagetopdfconvertor/imagetopdfcnverter.html">Image to PDF Convertor</a></li>
+                <li><a href="photofilesizecompressor/photosizecompressor.html">Photo Size Compressor</a></li>
+                <li><a href="functiongraphplotter/functiongraphplotter.html">Function Graph Plotter</a></li>
+                <li><a href="html-code-viewer/htmlcode-editorandviewer.html">HTML Code Editor & Viewer</a></li>
+                <li><a href="JEE.html">JEE</a></li>
+                <li><a href="Pythonprogramming/Pythonprogramming.html">Python Programming</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Give a suggestion for this website improvement:</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="suggestion">Suggestion:</label>
+                <textarea id="suggestion" name="suggestion"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <div class="counter">
+                <h1>Welcome!</h1>
+                <p id="visitorMessage"></p>
+                <p id="totalVisitors"></p>
+            </div>
+
+            <script>
+                const visitorMessage = document.getElementById("visitorMessage");
+                const totalVisitors = document.getElementById("totalVisitors");
+
+                if (!localStorage.getItem("hasVisited")) {
+                    localStorage.setItem("hasVisited", "true");
+
+                    let visitorCount = parseInt(localStorage.getItem("totalVisitors")) || 0;
+                    visitorCount += 1;
+                    localStorage.setItem("totalVisitors", visitorCount);
+
+                    visitorMessage.textContent = "You are a new visitor!";
+                } else {
+                    visitorMessage.textContent = "";
+                }
+
+                totalVisitors.textContent = `Total new visitors: ${localStorage.getItem("totalVisitors") || 0}`;
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyStudyPlatform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
